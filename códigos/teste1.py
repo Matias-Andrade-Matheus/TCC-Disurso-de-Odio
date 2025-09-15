@@ -187,13 +187,13 @@ datasets = [
     {  # Offcom2
         "name": "Offcom2",
         "filepath": 'Datasets/OffComBR-3/OffComBR3.csv',
-        "text_column": 'comentario',
+        "text_column": 'mensagem',
         "label_column": 'label'
     },
     {  # OffcomBR-3
         "name": "OffcomBR-3",
         "filepath": 'Datasets/Offcom2/OffComBR2.csv',
-        "text_column": 'mensagem',
+        "text_column": 'comentario',
         "label_column": 'label'
     },
     {  # OLID-BR 
