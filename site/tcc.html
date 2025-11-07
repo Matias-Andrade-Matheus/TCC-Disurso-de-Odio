@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCC - Trabalho de Conclusão de Curso</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Detecção de discurso de ódio em textos do português</h1>
+            <p>TCC - Trabalho de Conclusão de Curso</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#objetivo">Objetivo</a></li>
+                <li><a href="#metodologia">Metodologia</a></li>
+                <li><a href="#pipeline">Pipeline</a></li>
+                <li><a href="#integrantes">Integrantes</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <section id="integrantes" class="parallax">
+            <div class="parallax-content">
+                <h2>Integrantes da Equipe</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img src="" alt="Ana Clara dos Santos Nascimento">
+                        </div>
+                        <h3>Ana Clara dos Santos Nascimento</h3>
+                    </div>
+    
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img src="edkelly.jpg" alt="Edkelly Conceição Santos">
+                        </div>
+                        <h3>Edkelly Conceição Santos</h3>
+                    </div>
+    
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img src="izabelly.jpg" alt="Izabelly Oliveira da Silva">
+                        </div>
+                        <h3>Izabelly Oliveira da Silva</h3>
+                    </div>
+    
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img src="lazaro.jpg" alt="Lazáro Mota Marques de Jesus">
+                        </div>
+                        <h3>Lazáro Mota Marques de Jesus</h3>
+                    </div>
+    
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img src="matheus.jpg" alt="Matheus Henrique Matias Andrade">
+                        </div>
+                        <h3>Matheus Henrique Matias Andrade</h3>
+                    </div>
+                    
+                    <div class="card orientador">
+                        <div class="card-img-container">
+                            <img src="rodolfo.jpg" alt="Prof. Dr. Rodolfo Costa">
+                        </div>
+                        <h3>Prof. Dr. Rodolfo Costa</h3>
+                        <p>Orientador</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="introducao">
+            <h2>Introdução</h2>
+            <p>Em advento das novas tecnologias e da crescente digitalização da informação surge as redes sociais e com elas as interações humanas mediadas por dispositivos digitais, no entanto, essas interações carregam dilemas incluindo preconceitos, discriminações das maias diversas e discursos de odiosos. Este trabalho busca explorar as metodologias e ferramentas disponíveis na literatura para enfrentar esse desafio, contribuindo com um ambiente digital mais seguro e respeitoso para todos.</p>
+        </section>
+
+        <section id="objetivo">
+            <h2>Objetivo</h2>
+            <p>O objetivo deste TCC é desenvolver um sistema de detecção de discurso de ódio em textos em português, através da linguagem de programação Python e bibliotecas como NLTK e Scikit-learn, técnicas de, respectivamente, processamento de linguagem natural e aprendizado de máquina. O sistema visa identificar e classificar automaticamente conteúdos que contenham discurso de ódio, contribuindo para a moderação de conteúdo em plataformas digitais que tem sido descontrolada.</p>
+            <div class="highlight">
+                <h3>Por que este TCC é importante?</h3>
+                <ul>
+                    <li>No mundo contemporâneo, observa-se de maneira crescente a presença do discurso de ódio nas redes sociais</li>
+                    <li>O discurso de ódio pode causar danos significativos às vítimas, afetando a saúde mental e o bem-estar dessas pessoas</li>
+                    <li>Ferramentas automatizadas de detecção podem auxiliar na moderação de conteúdo em larga escala já que esse processo manualmente seria inviável</li>
+                    <li>Contribui para a criação de um ambiente digital mais seguro e inclusivo para todos os usuários possibilitando um livre acesso às máquinas</li>
+                </ul>
+            </div>
+            
+        </section>
+        
+        <section id="metodologia">
+            <h2>Metodologia utilizada</h2>
+            <p>O desenvolvimento de um TCC segue uma sequência lógica de metodologia, já bem estabelecidas na literatura, que garantem a qualidade e o rigor científico do trabalho.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Etapa</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Definição de Datasets</td>
+                        <td>Captar alguns dos bancos de dados mais utilizados na área de detecção de discurso de ódio em língua portuguesa disponíveis na literatura, realizando uma análise detalhada de suas características e aplicabilidades.</td>
+                    </tr>
+                    <tr>
+                        <td>Realização do Pré-Processamento</td>
+                        <td>Aplicação de técnicas de limpeza e preparação dos dados, como remoção de stopwords, lemmatização, normalização e remoção de caracteres especiais.</td>
+                    </tr>
+                    <tr>
+                        <td>Vetorização das palavras</td>
+                        <td>Transformação dos textos em representações numéricas, utilizando técnicas como TF-IDF.</td>
+                    </tr>
+                    <tr>
+                        <td>Separação de Dados entre Treinamento e Teste</td>
+                        <td>Divisão dos dados presentes nos Datasets em conjuntos de treinamento (80%) e teste (20%) para validação dos modelos que serão aplicados.</td>
+                    </tr>
+                    <tr>
+                        <td>Aplicação de métodos de classificação</td>
+                        <td>Realizar aplicação de métodos como Naive Bayes, Random Forest, SVM Linear, Regressão Logística, KNN e Ensemble para extração dos resultados.</td>
+                    </tr>
+                    <tr>
+                        <td>Extração de Métricas</td>
+                        <td>Coleta e análise de métricas de desempenho dos modelos, como acurácia e F1-score (precisão e recall).</td>
+                    </tr>
+                    <tr>
+                        <td>Leitura e Análise dos Resultados</td>
+                        <td>Fase onde se busca compreender os resultados obtidos, identificando padrões e insights relevantes para o tema abordado, verificando se os modelos estão funcionando conforme o esperado, por exemplo.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="pipeline">
+            <h2>Pipeline de Desenvolvimento</h2>
+            <img src="pipeline.png" alt="Pipeline de Desenvolvimento do TCC">
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>Página Informativa sobre o TCC - Trabalho de Conclusão de Curso - Do Desenvolvimento de um Sistema de Detecção de Discurso de Ódio em Língua Portuguesa</p>
+            <p>Desenvolvido por alunos do Instituto Federal da Bahia - IFBA - Campus Valença</p>
+        </div>
+    </footer>
+</body>
+</html>
